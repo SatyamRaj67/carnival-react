@@ -67,10 +67,10 @@ const GetInvolvedSection = () => {
                 {step.id}
               </span>
               <div>
-                <h3 className="text-[clamp(1rem,1.5vw,1.5rem)]">
+                <h3 className="text-[1.5vw]">
                   {step.title}
                 </h3>
-                <p className="text-[clamp(0.875rem,1vw,1.125rem)]">
+                <p className="text-[1vw]">
                   {step.desc}
                 </p>
               </div>

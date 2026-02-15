@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -78,6 +80,12 @@ const FAQItem = ({
 };
 
 const FAQSection = () => {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
   return (
     <section className="relative w-full min-h-screen ">
       {/* === TRANSITION SECTION === */}
