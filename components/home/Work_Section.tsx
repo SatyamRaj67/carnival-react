@@ -93,18 +93,18 @@ const WorkSection = () => {
 
           {/* === Information Boxes === */}
           <div className="absolute top-[6vw] right-[5vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
-            <h1 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
+            <h2 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
               Step 1: Make an Extension
-            </h1>
+            </h2>
             <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
               Create a new extension in your development environment.
             </p>
           </div>
 
           <div className="absolute top-[36vw] left-[10vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
-            <h1 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
+            <h2 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
               Step 2: Ship Your Extension
-            </h1>
+            </h2>
             <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
               Publish your extension to the Chrome Web Store and share it with
               the world.
@@ -112,9 +112,9 @@ const WorkSection = () => {
           </div>
 
           <div className="absolute top-[82vw] right-[10vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
-            <h1 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
+            <h2 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
               Step 3: Earn Rewards
-            </h1>
+            </h2>
             <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
               Earn points based on the popularity and impact of your extension.
             </p>

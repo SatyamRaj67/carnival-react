@@ -25,10 +25,10 @@ const FAQSection = () => {
           alt="Railing"
           width={1080}
           height={133}
-          className="w-full h-auto object-cover z-1"
+          className="w-full h-auto object-cover z-10"
         />
-        <span className="absolute text-center top-[1vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-2">
-          FAQ Section - Work in construction
+        <span className="absolute text-center top-[1vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-20">
+          FAQ Section - Under Construction
         </span>
       </div>
     </section>
