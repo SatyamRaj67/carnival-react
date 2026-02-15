@@ -8,14 +8,14 @@ const FAQSection = () => {
       <div className="relative w-full flex items-center justify-center top-[10vw]">
         <Image
           src="/left-ropes.png"
-          alt="Carnival Logo"
+          alt="Left Ropes"
           width={300}
           height={300}
           className="absolute w-auto h-[15vw] left-[8vw] top-[-10vw] object-cover"
         />
         <Image
           src="/right-ropes.png"
-          alt="Carnival Logo"
+          alt="Right Ropes"
           width={200}
           height={400}
           className="absolute w-auto h-[15vw] right-[8vw] top-[-5.5vw] object-cover"

@@ -7,14 +7,14 @@ const WorkSection = () => {
       <div className="w-full flex items-center justify-center">
         <Image
           src="/left-ropes.png"
-          alt="Carnival Logo"
+          alt="Left Ropes"
           width={300}
           height={300}
           className="absolute w-auto h-[15vw] left-[8vw] top-[-10vw] object-cover"
         />
         <Image
           src="/right-ropes.png"
-          alt="Carnival Logo"
+          alt="Right Ropes"
           width={200}
           height={400}
           className="absolute w-auto h-[15vw] right-[8vw] top-[-5.5vw] object-cover"
@@ -24,9 +24,9 @@ const WorkSection = () => {
           alt="Railing"
           width={1080}
           height={133}
-          className="w-full h-auto object-cover z-1"
+          className="w-full h-auto object-cover z-10"
         />
-        <span className="absolute text-center top-[2.5vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-2">
+        <span className="absolute text-center top-[2.5vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-20">
           How it works
         </span>
       </div>

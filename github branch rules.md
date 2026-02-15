@@ -7,5 +7,7 @@ git push
 
 go to github and create a pull request to main branch
 
+## After your PR is reviewed and merged
+
 git checkout main
 git pull

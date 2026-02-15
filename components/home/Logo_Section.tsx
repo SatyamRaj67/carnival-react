@@ -4,7 +4,7 @@ const LogoSection = () => {
   return (
     <section className="w-full h-[75vw] overflow-hidden relative flex justify-center lg:h-dvh ">
       {/* === Putting Assets === */}
-      <div className="relative top-[5vw] w-[85vw] h-[30vw] flex items-center justify-center duration-150 hover:rotate-5">
+      <div className="relative top-[5vw] w-[85vw] h-[30vw] flex items-center justify-center duration-150 hover:rotate-[5deg]">
         <Image
           src="/logo-bg.png"
           alt="Logo Background"
@@ -20,7 +20,7 @@ const LogoSection = () => {
           height={500}
           className="absolute w-auto h-[25vw] object-cover"
         />
-        <span className="absolute text-center bottom-0 text-[2.5vw] -rotate-5">
+        <span className="absolute text-center bottom-0 text-[2.5vw] -rotate-[5deg]">
           Make Projects, Not Excuses and Earn Rewards with Carnival.
         </span>
       </div>
@@ -34,7 +34,7 @@ const LogoSection = () => {
         />
         <button
           type="submit"
-          className="ml-2 p-2 bg-blue-500 text-white rounded-md transition-all hover:tracking-widest]"
+          className="ml-2 p-2 bg-blue-500 text-white rounded-md transition-all hover:tracking-widest"
         >
           Subscribe
         </button>
