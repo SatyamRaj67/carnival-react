@@ -2,15 +2,15 @@ import Image from "next/image";
 
 const LogoSection = () => {
   return (
-    <section className="w-full h-dvh overflow-hidden relative flex items-center justify-center">
+    <section className="w-full h-[75vw] overflow-hidden relative flex justify-center lg:h-dvh ">
       {/* === Putting Assets === */}
-      <div className="absolute top-25 w-full h-75 flex items-center justify-center duration-150 hover:rotate-5">
+      <div className="relative top-[5vw] w-[85vw] h-[30vw] flex items-center justify-center duration-150 hover:rotate-[5deg]">
         <Image
           src="/logo-bg.png"
           alt="Logo Background"
           width={750}
           height={500}
-          className="absolute w-[85vw] h-auto object-cover"
+          className="absolute w-auto h-[30vw] object-cover"
         />
         <Image
           src="/logo.png"
@@ -18,19 +18,19 @@ const LogoSection = () => {
           fetchPriority="high"
           width={750}
           height={500}
-          className="absolute w-[60vw] h-auto object-cover"
+          className="absolute w-auto h-[25vw] object-cover"
         />
-        <span className="absolute text-center top-[20vw] text-4xl -rotate-5">
+        <span className="absolute text-center bottom-0 text-[2.5vw] -rotate-[5deg]">
           Make Projects, Not Excuses and Earn Rewards with Carnival.
         </span>
       </div>
 
       {/* === Content === */}
-      <form className="absolute bottom-[4vw] flex items-center justify-center bg-orange-400 border-amber-800 border-[1vw] p-[1vw] rounded-lg">
+      <form className="absolute top-[40vw] w-[75vw] flex items-center justify-center bg-orange-400 border-amber-800 border-[1vw] p-[1vw] rounded-lg lg:w-[30vw]">
         <input
           type="email"
           placeholder="Enter your email"
-          className="p-2 border rounded-md bg-white text-black outline-0 border-none focus:ring-2"
+          className="p-2 border rounded-md bg-white text-black outline-0 border-none focus:ring-2 flex-1"
         />
         <button
           type="submit"
