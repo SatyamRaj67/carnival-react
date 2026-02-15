@@ -2,6 +2,29 @@ import React from "react";
 import Image from "next/image";
 
 const GetInvolvedSection = () => {
+  const steps = [
+    {
+      id: 1,
+      title: "Join the #carnival channel",
+      desc: "Ask, share, and vibe with the community on Slack",
+    },
+    {
+      id: 2,
+      title: "Set up Hackatime",
+      desc: "Start tracking your time to earn grants",
+    },
+    {
+      id: 3,
+      title: "Build your Extension",
+      desc: "Create a plugin or widget and ship it",
+    },
+    {
+      id: 4,
+      title: "Submit for review",
+      desc: "Claim your rewards and get recognized",
+    },
+  ];
+
   return (
     <section className="relative w-full min-h-screen ">
       {/* === TRANSITION SECTION === */}
@@ -35,50 +58,24 @@ const GetInvolvedSection = () => {
       {/* === A LIST OF STEPS TO FOLLOW === */}
       <div className="relative w-full top-[20vw] flex items-center justify-center pb-[15vw]">
         <ul className="w-full max-w-[80vw] flex flex-col items-center justify-center gap-[4vw]">
-          <li className="w-full text-[1.5vw] p-[1vw] bg-amber-500 border-amber-800 border-[0.75vw] outline-[1vw] outline-amber-900 rounded-lg mb-[1vw] flex items-center justify-start gap-[1vw]">
-            <span className="bg-amber-800 rounded-full w-[2vw] h-[2vw] flex items-center justify-center text-white">
-              1
-            </span>
-            <div>
-              <h3 className="text-[1.5vw]">Join the #carnival channel</h3>
-              <p className="text-[1vw]">
-                Ask, share, and vibe with the community on Slack
-              </p>
-            </div>
-          </li>
-          <li className="w-full text-[1.5vw] p-[1vw] bg-amber-500 border-amber-800 border-[0.75vw] outline-[1vw] outline-amber-900 rounded-lg mb-[1vw] flex items-center justify-start gap-[1vw]">
-            <span className="bg-amber-800 rounded-full w-[2vw] h-[2vw] flex items-center justify-center text-white">
-              2
-            </span>
-            <div>
-              <h3 className="text-[1.5vw]">Set up Hackatime</h3>
-              <p className="text-[1vw]">
-                Start tracking your time to earn grants
-              </p>
-            </div>
-          </li>
-          <li className="w-full text-[1.5vw] p-[1vw] bg-amber-500 border-amber-800 border-[0.75vw] outline-[1vw] outline-amber-900 rounded-lg mb-[1vw] flex items-center justify-start gap-[1vw]">
-            <span className="bg-amber-800 rounded-full w-[2vw] h-[2vw] flex items-center justify-center text-white">
-              3
-            </span>
-            <div>
-              <h3 className="text-[1.5vw]">Build your Extension</h3>
-              <p className="text-[1vw]">
-                Create a plugin or widget and ship it
-              </p>
-            </div>
-          </li>
-          <li className="w-full text-[1.5vw] p-[1vw] bg-amber-500 border-amber-800 border-[0.75vw] outline-[1vw] outline-amber-900 rounded-lg mb-[1vw] flex items-center justify-start gap-[1vw]">
-            <span className="bg-amber-800 rounded-full w-[2vw] h-[2vw] flex items-center justify-center text-white">
-              4
-            </span>
-            <div>
-              <h3 className="text-[1.5vw]">Submit for review</h3>
-              <p className="text-[1vw]">
-                Claim your rewards and get recognized
-              </p>
-            </div>
-          </li>
+          {steps.map((step) => (
+            <li
+              key={step.id}
+              className="w-full text-[1.5vw] p-[1vw] bg-amber-500 border-amber-800 border-[0.75vw] outline-[1vw] outline-amber-900 rounded-lg mb-[1vw] flex items-center justify-start gap-[1vw]"
+            >
+              <span className="bg-amber-800 rounded-full w-[2vw] h-[2vw] flex items-center justify-center text-white">
+                {step.id}
+              </span>
+              <div>
+                <h3 className="text-[clamp(1rem,1.5vw,1.5rem)]">
+                  {step.title}
+                </h3>
+                <p className="text-[clamp(0.875rem,1vw,1.125rem)]">
+                  {step.desc}
+                </p>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
 

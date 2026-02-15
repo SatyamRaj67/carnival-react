@@ -5,21 +5,25 @@ import Image from "next/image";
 
 const faqs = [
   {
+    id: "team-participation",
     question: "Do I need a team to participate?",
     answer:
       "Not essentially! You can participate solo or form a team of up to 4 pirates. Check our Slack channel if you're looking for crewmates.",
   },
   {
+    id: "participation-fee",
     question: "Is there a participation fee?",
     answer:
       "No, the carnival is completely free for everyone. Just bring your laptop and your creative spirit!",
   },
   {
+    id: "extension-types",
     question: "What kind of extensions can I build?",
     answer:
       "You can build any VS Code extension that improves developer productivity, adds fun features, or just makes the editor look cool.",
   },
   {
+    id: "grant-distribution",
     question: "How are the grants distributed?",
     answer:
       "Grants are awarded based on the complexity, utility, and 'wow' factor of your submission. Payment is processed via bank transfer or crypto.",
@@ -55,15 +59,21 @@ const FAQItem = ({
         </span>
       </div>
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
           isOpen
-            ? "max-h-[20vw] opacity-100 p-[1.5vw] pt-0 border-t border-amber-800/30"
-            : "max-h-0 opacity-0"
+            ? "grid-rows-[1fr] opacity-100 border-t border-amber-800/30"
+            : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <p className="text-[1.2vw] text-amber-950 font-medium leading-tight">
-          {answer}
-        </p>
+        <div className="overflow-hidden">
+          <p
+            className={`text-[1.2vw] text-amber-950 font-medium leading-tight p-[1.5vw] pt-0 transition-all duration-300 ease-in-out ${
+              isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1"
+            }`}
+          >
+            {answer}
+          </p>
+        </div>
       </div>
     </button>
   );
@@ -111,7 +121,7 @@ const FAQSection = () => {
         <div className="w-full max-w-[70vw] flex flex-col items-center justify-center gap-[1vw]">
           {faqs.map((faq, index) => (
             <FAQItem
-              key={index}
+              key={faq.id}
               question={faq.question}
               answer={faq.answer}
               isOpen={openIndex === index}
