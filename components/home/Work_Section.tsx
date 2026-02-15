@@ -92,9 +92,9 @@ const WorkSection = () => {
           </div>
 
           {/* === Information Boxes === */}
-          <div className="absolute top-[6vw] right-[5vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
-            <h2 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
-              Step 1: Make an Extension
+          <div className="absolute top-[6vw] right-[5vw] w-[30vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
+            <h2 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-100 md:scale-125 max-w-full overflow-hidden wrap-break-words">
+              Step 1: Make a Plugin/Extension
             </h2>
             <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
               Create a new extension in your development environment.
