@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WorkSection = () => {
   return (
-    <section className="w-full min-h-screen relative">
+    <section className="w-full h-[120vw] relative">
       {/* === TRANSITION SECTION === */}
       <div className="w-full flex items-center justify-center">
         <Image
@@ -47,14 +47,14 @@ const WorkSection = () => {
             alt="Carousel"
             width={600}
             height={600}
-            className="absolute w-auto h-[30vw] top-[35vw] left-[65vw] object-cover "
+            className="absolute w-auto h-[30vw] top-[35vw] left-[65vw] object-cover hover:-translate-y-5 transition-all "
           />
           <Image
             src="/ferris-wheel.png"
             alt="Ferris Wheel"
             width={500}
             height={500}
-            className="absolute w-auto h-[30vw] top-[75vw] left-[5vw] object-cover "
+            className="absolute w-auto h-[30vw] top-[75vw] left-[5vw] object-cover hover:-translate-y-5 transition-all"
           />
 
           {/* Staircase should be in the same for overlapping */}
@@ -89,6 +89,35 @@ const WorkSection = () => {
               height={400}
               className="absolute w-auto h-[15vw] left-[5vw] object-cover scale-x-105"
             />
+          </div>
+
+          {/* === Information Boxes === */}
+          <div className="absolute top-[6vw] right-[5vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
+            <h1 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
+              Step 1: Make an Extension
+            </h1>
+            <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
+              Create a new extension in your development environment.
+            </p>
+          </div>
+
+          <div className="absolute top-[36vw] left-[10vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
+            <h1 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
+              Step 2: Ship Your Extension
+            </h1>
+            <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
+              Publish your extension to the Chrome Web Store and share it with
+              the world.
+            </p>
+          </div>
+
+          <div className="absolute top-[82vw] right-[10vw] w-[25vw] h-[18vw] bg-amber-500 border-amber-900 border-[1vw] rounded-lg">
+            <h1 className="text-center text-white text-[1.5vw] bg-amber-800 border-amber-900 border-[1vw] rounded-lg relative top-[2vw] scale-125">
+              Step 3: Earn Rewards
+            </h1>
+            <p className="text-center text-white text-[1.5vw] relative top-[4vw] px-[1vw]">
+              Earn points based on the popularity and impact of your extension.
+            </p>
           </div>
         </div>
       </div>
