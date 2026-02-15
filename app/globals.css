@@ -4,14 +4,13 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --assent: oklch(92.427% 0.11504 95.756);
+  --accent: oklch(92.427% 0.11504 95.756);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-dyna-puff: var(--font-dyna-puff);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,8 +21,8 @@
 }
 
 body {
-  background: var(--assent);
+  background: var(--accent);
   color: var(--foreground);
-  font-family: "DynaPuff", system-ui;
+  font-family: DynaPuff, system-ui;
   font-optical-sizing: auto;
 }

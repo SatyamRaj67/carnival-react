@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WorkSection = () => {
   return (
-    <section className="w-dvw h-auto relative flex items-center justify-center">
+    <section className="w-full h-auto relative flex items-center justify-center">
       <div className="w-full flex items-center justify-center">
         <Image
           src="/railing.png"

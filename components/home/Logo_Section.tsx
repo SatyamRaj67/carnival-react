@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const LogoSection = () => {
   return (
-    <section className="w-dvw h-dvh overflow-hidden relative flex items-center justify-center">
+    <section className="w-full h-dvh overflow-hidden relative flex items-center justify-center">
       {/* === Putting Assets === */}
       <div className="absolute top-25 w-full h-75 flex items-center justify-center duration-150 hover:rotate-5">
         <Image
