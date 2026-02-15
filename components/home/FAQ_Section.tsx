@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 const faqs = [
@@ -80,12 +78,6 @@ const FAQItem = ({
 };
 
 const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const handleToggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <section className="relative w-full min-h-screen ">
       {/* === TRANSITION SECTION === */}
@@ -112,7 +104,7 @@ const FAQSection = () => {
           className="w-full h-auto object-cover z-10"
         />
         <span className="absolute text-center top-[1vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-20">
-          Frequently Asked Questions
+          FAQ Section - Under Construction
         </span>
       </div>
 
