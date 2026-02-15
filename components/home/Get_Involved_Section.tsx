@@ -27,9 +27,9 @@ const GetInvolvedSection = () => {
           height={133}
           className="w-full h-auto object-cover z-10"
         />
-        <span className="absolute text-center top-[1vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-20">
+        <h2 className="absolute text-center top-[1vw] text-[3vw] rotate-2 text-white bg-amber-500 border-amber-800 border-[1vw] p-[1vw] rounded-lg z-20">
           How to Get Involved
-        </span>
+        </h2>{" "}
       </div>
 
       {/* === A LIST OF STEPS TO FOLLOW === */}

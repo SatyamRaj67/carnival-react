@@ -38,8 +38,10 @@ const FAQItem = ({
   onClick: () => void;
 }) => {
   return (
-    <div
+    <button
+      type="button"
       onClick={onClick}
+      aria-expanded={isOpen}
       className="w-full cursor-pointer bg-amber-500 border-amber-800 border-[0.75vw] outline-[1vw] outline-amber-900 rounded-lg mb-[2vw] transition-all duration-300"
     >
       <div className="flex items-center justify-between p-[1.5vw]">
@@ -63,7 +65,7 @@ const FAQItem = ({
           {answer}
         </p>
       </div>
-    </div>
+    </button>
   );
 };
 

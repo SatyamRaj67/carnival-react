@@ -42,7 +42,7 @@ const SubmissionSection = () => {
       <div className="relative w-full flex items-center justify-center top-[20vw] gap-[5vw] pb-[15vw]">
         {/* === BOX === */}
         <div className="w-[25vw] h-[20vw] bg-amber-500 border-amber-900 outline-[1vw] outline-amber-800 border-[0.75vw] rounded-lg flex items-center justify-center flex-col">
-          <h3 className="text-[3vw] w-full text-center pt-[1vw]">+$10</h3>
+          <h2 className="text-[3vw] w-full text-center pt-[1vw]">+$10</h2>{" "}
           <span className="text-[1.5vw]">First on a new Editor/App</span>
           <p className="w-full h-full flex items-center justify-center p-[2vw] text-[1.25vw] text-center border-t-amber-900 border-t-[0.75vw]">
             Ship the first original extension for an editor/app no one's hit
